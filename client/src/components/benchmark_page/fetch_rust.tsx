@@ -33,14 +33,21 @@ const RustComponent: React.FC = () => {
   return (
     <div>
       <button onClick={fetchData}>
-        click here to Fetch Data from rust server
+        click here to fetch Data from rust server
       </button>
 
       {loading && <p>Loading...</p>}
 
       {Data && (
         <div>
-          <p>{`Time taken: ${time}ms`}</p>
+          <p>{`Time taken: ${time}s`}</p>
+          <p>
+            click{" "}
+            <a href="/jsons/10mb" target="blank">
+              <strong>here</strong>{" "}
+            </a>
+            to see the result
+          </p>
         </div>
       )}
     </div>

@@ -40,11 +40,17 @@ const RustComponent: React.FC = () => {
 
       {Data && (
         <div>
-          <p>{`Time taken: ${time}ms`}</p>
+          <p>{`Time taken: ${time}s`}</p>
+          <p>
+            click{" "}
+            <a href="/jsons/sorted" target="blank">
+              <strong>here</strong>{" "}
+            </a>
+            to see the result
+          </p>
         </div>
       )}
     </div>
   );
 };
-
 export default RustComponent;
