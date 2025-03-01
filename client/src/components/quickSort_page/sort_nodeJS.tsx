@@ -43,8 +43,8 @@ const NodeJsComponent: React.FC = () => {
           <p>{`Time taken: ${time}s`}</p>
           <p>
             click{" "}
-            <a href="http://localhost:3001/quickSort/sorted/500" target="blank">
-              here{" "}
+            <a href="/jsons/sorted" target="blank">
+              <strong>here</strong>{" "}
             </a>
             to see the result
           </p>
